@@ -63,7 +63,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wedding chapel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOW-zq-4XY">
-                                <rect key="frame" x="127" y="438" width="121" height="21"/>
+                                <rect key="frame" x="127" y="404" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-Rb-Ace">
+                                <rect key="frame" x="122.5" y="470" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created: 2012" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdg-Wa-XHQ">
+                                <rect key="frame" x="133.5" y="536" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,12 +84,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tGG-oQ-VOU" firstAttribute="centerX" secondItem="Koc-9t-VOA" secondAttribute="centerX" id="23m-Od-dsy"/>
-                            <constraint firstItem="EOW-zq-4XY" firstAttribute="top" secondItem="tGG-oQ-VOU" secondAttribute="bottom" constant="89" id="N5w-7c-Cho"/>
+                            <constraint firstItem="hdg-Wa-XHQ" firstAttribute="centerX" secondItem="Koc-9t-VOA" secondAttribute="centerX" id="IGZ-su-29X"/>
+                            <constraint firstItem="EOW-zq-4XY" firstAttribute="top" secondItem="tGG-oQ-VOU" secondAttribute="bottom" constant="55" id="N5w-7c-Cho"/>
+                            <constraint firstItem="7eJ-Rb-Ace" firstAttribute="centerX" secondItem="Koc-9t-VOA" secondAttribute="centerX" id="SYA-m2-5sY"/>
                             <constraint firstItem="tGG-oQ-VOU" firstAttribute="top" secondItem="Eof-4A-oiy" secondAttribute="bottom" constant="40" id="UMz-DB-Xpu"/>
+                            <constraint firstItem="hdg-Wa-XHQ" firstAttribute="top" secondItem="7eJ-Rb-Ace" secondAttribute="bottom" constant="45" id="cYh-CP-r9j"/>
+                            <constraint firstItem="7eJ-Rb-Ace" firstAttribute="top" secondItem="EOW-zq-4XY" secondAttribute="bottom" constant="45" id="oyr-HL-2ZD"/>
                             <constraint firstItem="EOW-zq-4XY" firstAttribute="centerX" secondItem="Koc-9t-VOA" secondAttribute="centerX" id="phN-ZX-HjA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CategoryLabel" destination="7eJ-Rb-Ace" id="Mxr-80-5bb"/>
+                        <outlet property="CreatedLabel" destination="hdg-Wa-XHQ" id="pOQ-gu-Fv2"/>
                         <outlet property="definitionLabel" destination="EOW-zq-4XY" id="DPH-uA-XMQ"/>
                         <outlet property="emojiLabel" destination="tGG-oQ-VOU" id="qSE-sM-PfC"/>
                     </connections>
